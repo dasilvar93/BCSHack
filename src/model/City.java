@@ -54,6 +54,10 @@ public class City {
         }
     }
 
+    public List<User> getUsers() {
+        return this.users;
+    }
+
     public void addPlant(Plant plant) {
         if(!plants.contains(plant)){
             plants.add(plant);
