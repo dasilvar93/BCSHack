@@ -7,5 +7,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="com.google.maps:google-maps-services:0.9.2" level="project" />
+    <orderEntry type="library" name="com.googlecode.sli4j:sli4j-slf4j-simple:2.0" level="project" />
   </component>
 </module>
