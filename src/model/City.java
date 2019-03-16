@@ -55,7 +55,17 @@ public class City {
     }
 
     public void addPlant(Plant plant) {
-        plants.add(plant);
+        if(!plants.contains(plant)){
+            plants.add(plant);
+            plant.changeCity(this);
+        }
+    }
+
+    public void removePlant(Plant plant) {
+        if(plants.contains(plant)){
+            plants.remove(plant);
+            plant.changeCity(null);
+        }
     }
 
     public List<User> usersNear(Double longitude, Double latitude) {
