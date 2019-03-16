@@ -6,6 +6,7 @@ import java.awt.*;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class Plant {
 
@@ -130,6 +131,18 @@ public class Plant {
          }
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Plant plant = (Plant) o;
+        return Objects.equals(species, plant.species) &&
+                Objects.equals(longitude, plant.longitude) &&
+                Objects.equals(latitude, plant.latitude);
+    }
 
-
+    @Override
+    public int hashCode() {
+        return Objects.hash(species, longitude, latitude);
+    }
 }
