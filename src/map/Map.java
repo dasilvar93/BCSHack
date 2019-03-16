@@ -2,5 +2,5 @@ package map;
 
 public class Map {
 
-    String apiKey = "AIzaSyBsHEhsgeGLh4O67jwjMDfHWOLusZUG3i8";
+    String apiKey = "AIzaSyBZeDIPYY8c4_HmvUmDq4Br-pgdxmm1EQs";
 }
