@@ -17,7 +17,7 @@ public class Grower extends User {
 
     public void notify(Plant plant, String message) {
         if (message.equalsIgnoreCase("water")) {
-            System.out.println(plant.getSpecies() + "needs to be watered!");
+            System.out.println(plant.getSpecies() + " needs to be watered!");
         }
     }
 

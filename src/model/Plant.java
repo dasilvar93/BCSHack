@@ -117,7 +117,7 @@ public class Plant {
 
          if (today.isAfter(dateToWater)) {
              for (User u: city.usersNear(longitude, latitude)) {
-                 u.notify(this, "water"); 
+                 u.notify(this, "water");
              }
 
          }
