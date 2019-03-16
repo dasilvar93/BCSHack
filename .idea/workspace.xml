@@ -9,6 +9,7 @@
       <change beforePath="$PROJECT_DIR$/out/production/UrbanGrowers/model/Users/Eater.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UrbanGrowers/model/Users/Eater.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/UrbanGrowers/model/Users/Grower.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UrbanGrowers/model/Users/Grower.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/UrbanGrowers/model/Users/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UrbanGrowers/model/Users/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/City.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/City.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -79,6 +80,15 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/model/Ui/MainUi.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="49">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/model/UrbanGrowers.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
@@ -96,11 +106,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/model/Users/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="592">
-              <caret line="52" column="19" selection-start-line="52" selection-start-column="19" selection-end-line="52" selection-end-column="19" />
+            <state relative-caret-position="107">
+              <caret line="25" column="26" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#934#935#0" expanded="true" />
@@ -116,47 +126,16 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/model/Users/Grower.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="54" selection-start-line="19" selection-start-column="54" selection-end-line="19" selection-end-column="54" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#107#108#0" expanded="true" />
-                <element signature="e#131#132#0" expanded="true" />
-                <element signature="e#203#204#0" expanded="true" />
-                <element signature="e#257#258#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/model/Users/Eater.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="74" selection-start-line="17" selection-start-column="74" selection-end-line="17" selection-end-column="74" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#97#98#0" expanded="true" />
-                <element signature="e#120#121#0" expanded="true" />
-                <element signature="e#198#199#0" expanded="true" />
-                <element signature="e#252#253#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/model/City.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1428">
-              <caret line="84" column="58" selection-start-line="84" selection-start-column="58" selection-end-line="84" selection-end-column="58" />
+            <state relative-caret-position="-318">
+              <caret line="57" column="27" selection-start-line="57" selection-start-column="27" selection-end-line="57" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1196#1197#0" expanded="true" />
                 <element signature="e#1245#1246#0" expanded="true" />
+                <element signature="e#1503#1504#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -173,6 +152,7 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="UPDATE_TYPE" value="MERGE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
@@ -180,11 +160,11 @@
       <list>
         <option value="$PROJECT_DIR$/src/model/Plants.java" />
         <option value="$PROJECT_DIR$/src/model/Status.java" />
-        <option value="$PROJECT_DIR$/src/model/Users/User.java" />
         <option value="$PROJECT_DIR$/src/model/Users/Eater.java" />
         <option value="$PROJECT_DIR$/src/model/Users/Grower.java" />
-        <option value="$PROJECT_DIR$/src/model/City.java" />
         <option value="$PROJECT_DIR$/src/model/Plant.java" />
+        <option value="$PROJECT_DIR$/src/model/Users/User.java" />
+        <option value="$PROJECT_DIR$/src/model/City.java" />
       </list>
     </option>
   </component>
@@ -252,6 +232,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
               <item name="Ui" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="UrbanGrowers" type="b2602c69:ProjectViewProjectNode" />
+              <item name="UrbanGrowers" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="Ui" type="462c0819:PsiDirectoryNode" />
+              <item name="InputBars" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="UrbanGrowers" type="b2602c69:ProjectViewProjectNode" />
@@ -376,7 +364,14 @@
       <option name="project" value="LOCAL" />
       <updated>1552774739180</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="updated user constructor">
+      <created>1552776397038</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1552776397038</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -442,7 +437,8 @@
     <MESSAGE value="Added rainfall water method." />
     <MESSAGE value="I can't remember wha I changed" />
     <MESSAGE value="added workspace.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="added workspace.xml" />
+    <MESSAGE value="updated user constructor" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated user constructor" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/model/Hydration.java">
@@ -483,18 +479,6 @@
             <element signature="e#120#121#0" expanded="true" />
             <element signature="e#198#199#0" expanded="true" />
             <element signature="e#252#253#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/City.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1428">
-          <caret line="84" column="58" selection-start-line="84" selection-start-column="58" selection-end-line="84" selection-end-column="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1196#1197#0" expanded="true" />
-            <element signature="e#1245#1246#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -562,17 +546,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/Ui/EaterPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/model/Users/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="592">
-          <caret line="52" column="19" selection-start-line="52" selection-start-column="19" selection-end-line="52" selection-end-column="19" />
+        <state relative-caret-position="107">
+          <caret line="25" column="26" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#934#935#0" expanded="true" />
@@ -583,6 +560,40 @@
             <element signature="e#1081#1082#0" expanded="true" />
             <element signature="e#1116#1117#0" expanded="true" />
             <element signature="e#1135#1136#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Ui/InputBars/InputPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Ui/EaterPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Ui/MainUi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="49">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/City.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-318">
+          <caret line="57" column="27" selection-start-line="57" selection-start-column="27" selection-end-line="57" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1196#1197#0" expanded="true" />
+            <element signature="e#1245#1246#0" expanded="true" />
+            <element signature="e#1503#1504#0" expanded="true" />
           </folding>
         </state>
       </provider>

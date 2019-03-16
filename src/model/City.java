@@ -10,7 +10,7 @@ import java.util.List;
 public class City {
     private String name;
     private Integer zone;
-    private HashMap<String, List<Plant>> plants;
+    private List<Plant> plants;
     private List<User> users;
     private static final Double NEAR_THRESHOLD = 1000.00; //metres
     private HashMap<LocalDate, Integer> rainfallRecord; //mm
@@ -20,20 +20,19 @@ public class City {
     public City(String name, Integer zone) {
         this.name = name;
         this.zone = zone;
-        plants = new HashMap<>();
+        plants = new ArrayList<>();
         users = new ArrayList<>();
         rainfallRecord = new HashMap<>();
     }
 
     public List<Plant> getPlants(Double maxLong, Double minLong, Double maxLat, Double minLat) {
         List<Plant> returnPlants = new ArrayList<>();
-        for (List<Plant> list: plants.values()) {
-            for (Plant p: list) {
-                if (withinThreshold(p, maxLong, minLong, maxLat, minLat)) {
-                    returnPlants.add(p);
-                }
+        for (Plant p : plants) {
+            if (withinThreshold(p, maxLong, minLong, maxLat, minLat)) {
+                returnPlants.add(p);
             }
         }
+
         return returnPlants;
     }
 
@@ -41,32 +40,36 @@ public class City {
         rainfallRecord.put(date, amount);
     }
 
-    public void addUser(User user){
+    public void addUser(User user) {
         if (!users.contains(user)) {
             users.add(user);
             user.changeCity(this);
         }
     }
 
-    public void removeUser(User user){
-        if (users.contains(user)){
+    public void removeUser(User user) {
+        if (users.contains(user)) {
             users.remove(user);
             user.changeCity(null);
         }
     }
 
+    public void addPlant(Plant plant) {
+        plants.add(plant);
+    }
+
     public List<User> usersNear(Double longitude, Double latitude) {
 
         List<User> returnUsers = new ArrayList<>();
-        Double maxLong = longitude + (NEAR_THRESHOLD/2);
-        Double minLong = longitude - (NEAR_THRESHOLD/2);
-        Double maxLat = latitude + (NEAR_THRESHOLD/2);
-        Double minLat = latitude - (NEAR_THRESHOLD/2);
+        Double maxLong = longitude + (NEAR_THRESHOLD / 2);
+        Double minLong = longitude - (NEAR_THRESHOLD / 2);
+        Double maxLat = latitude + (NEAR_THRESHOLD / 2);
+        Double minLat = latitude - (NEAR_THRESHOLD / 2);
 
-        for (User u: users) {
-                if (withinThreshold(u, maxLong, minLong, maxLat, minLat)) {
-                    returnUsers.add(u);
-                }
+        for (User u : users) {
+            if (withinThreshold(u, maxLong, minLong, maxLat, minLat)) {
+                returnUsers.add(u);
+            }
         }
 
         return returnUsers;
@@ -83,12 +86,12 @@ public class City {
 
     public void waterFromRainfall() {
         if (rainfallRecord.get(LocalDate.now()) >= RAINFALL_THRESHOLD) {
-            for (List<Plant> list: plants.values()){
-                for (Plant p: list){
-                    p.watered();
-                }
+
+            for (Plant p : plants) {
+                p.watered();
             }
         }
     }
+
 
 }
