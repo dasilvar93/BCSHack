@@ -1,4 +1,12 @@
 package model.Ui;
 
-public class MapPanel {
+import javax.swing.*;
+import java.awt.*;
+
+public class MapPanel extends JPanel {
+
+    public MapPanel() {
+        setBackground(Color.black);
+
+    }
 }

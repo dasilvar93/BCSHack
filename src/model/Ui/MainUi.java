@@ -5,12 +5,12 @@ import java.awt.*;
 
 public class MainUi {
     private static JFrame jFrame;
-    private static JPanel interactionPanel;
+    protected static JPanel interactionPanel;
     private static JPanel mapPanel;
     private static EaterPanel eaterPanel;
     private static GrowerPanel growerPanel;
     private static UserStartingPanel userStartingPanel;
-    private static CardLayout cl = new CardLayout();
+    protected static CardLayout cl = new CardLayout();
 
 
     public MainUi() {
@@ -21,18 +21,18 @@ public class MainUi {
 
     private void makeAndShowFrame() {
         jFrame.setLayout(new BorderLayout());
-        jFrame.add(interactionPanel, BorderLayout.EAST);
-        jFrame.add(mapPanel, BorderLayout.WEST);
+        jFrame.add(interactionPanel, BorderLayout.WEST);
         jFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         jFrame.pack();
-        jFrame.setSize(800, 450);
+        jFrame.setSize(1600, 900);
         jFrame.setLocation(50, 20);
         jFrame.setVisible(true);
     }
 
     private void appendAndShowPanels() {
         interactionPanel = new JPanel();
-        mapPanel = new JPanel();
+        interactionPanel.setSize(1600, 900);
+
         makeUserStartingPanel();
         makeGrowerPanel();
         makeEaterPanel();
