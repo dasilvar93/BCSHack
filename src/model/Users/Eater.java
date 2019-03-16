@@ -5,7 +5,6 @@ import model.Plant;
 
 public class Eater extends User {
 
-
     public Eater() {
         super();
     }
