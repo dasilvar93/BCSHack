@@ -23,6 +23,7 @@ public abstract class User {
         this.longitude = longitude;
         this.name = name;
         this.city = city;
+        city.addUser(this);
     }
 
     public List<Plant> AllPlantsNear(){
