@@ -88,7 +88,7 @@ public class Plant {
 
     public void changeCity(City city) {
          this.city = city;
-         city.addPlant(this);
+         this.city.addPlant(this);
     }
 
     public void makeHarvestable() {
