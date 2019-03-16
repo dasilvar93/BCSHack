@@ -14,5 +14,4 @@ public class City {
         plants = new HashMap<>();
     }
 
-
 }
