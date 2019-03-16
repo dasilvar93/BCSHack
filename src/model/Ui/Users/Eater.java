@@ -1,4 +1,4 @@
-package model.Users;
+package model.Ui.Users;
 
 import model.City;
 import model.Plant;

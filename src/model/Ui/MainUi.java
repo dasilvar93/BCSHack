@@ -1,5 +1,7 @@
 package model.Ui;
 
+import model.Ui.growPanel.GrowerPanel;
+
 import javax.swing.*;
 import java.awt.*;
 

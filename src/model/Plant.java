@@ -1,6 +1,6 @@
 package model;
 
-import model.Users.User;
+import model.Ui.Users.User;
 
 import java.awt.*;
 import java.time.LocalDate;

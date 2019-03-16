@@ -8,8 +8,11 @@ import java.awt.event.ActionListener;
 public class UserStartingPanel extends JPanel {
     private static JButton growerButton;
     private static JButton eaterButton;
+    private static JLabel welcome;
 
     public UserStartingPanel() {
+        welcome = new JLabel("Hi! Please choose what you would like to do!");
+        add(welcome);
         makeInitialButtons();
         setSize(1600, 900);
         add(eaterButton);

@@ -4,14 +4,10 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public abstract class InputPanel extends JPanel implements ActionListener {
-    private JLabel inputLabel;
+public class InputPlantTypePanel extends JPanel implements ActionListener{
     public static JTextField textField;
-    //textField stuff from: https://docs.oracle.com/javase/tutorial/uiswing/components/textfield.html
 
-    public InputPanel(String title){
-        inputLabel = new JLabel("Enter input: ");
-        add(inputLabel);
+    public InputPlantTypePanel(){
         textField = new JTextField(20);
         textField.addActionListener(this);
         add(textField);
@@ -19,7 +15,7 @@ public abstract class InputPanel extends JPanel implements ActionListener {
     }
 
     private void makeEnterButton() {
-        JButton b = new JButton("Enter");
+        JButton b = new JButton("Enter plant type");
         b.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -29,7 +25,6 @@ public abstract class InputPanel extends JPanel implements ActionListener {
         add(b);
     }
 
-
     @Override
     public void actionPerformed(ActionEvent evt) {
         String text = textField.getText();
@@ -37,6 +32,4 @@ public abstract class InputPanel extends JPanel implements ActionListener {
 
         textField.setText("");
     }
-
-
 }
