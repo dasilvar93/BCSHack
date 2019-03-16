@@ -13,15 +13,28 @@ public abstract class User {
     private String name;
     private static final Double NEAR_THRESHOLD = 1000.00; //metres
 
+    public User(){
+
+    }
+
 
     public User(Double longitude, Double latitude, String name, City city){
         this.latitude = latitude;
         this.longitude = longitude;
         this.name = name;
+        this.city = city;
     }
 
-    public List<Plant> plantsNear(){
+    public List<Plant> AllPlantsNear(){
+        Double maxLong = longitude + (NEAR_THRESHOLD/2);
+        Double minLong = longitude - (NEAR_THRESHOLD/2);
+        Double maxLat = latitude + (NEAR_THRESHOLD/2);
+        Double minLat = latitude - (NEAR_THRESHOLD/2);
+
+        return this.city.getPlants(maxLong, minLong, maxLat, minLat);
+    }
+
+    public List<Plant> plantTypeNear() {
         return null;
     }
-
 }

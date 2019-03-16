@@ -4,8 +4,16 @@ import model.City;
 
 public class Grower extends User {
 
+
+    public Grower() {
+        super();
+    }
+
+
     public Grower(Double longitude, Double latitude, String name, City city) {
         super(longitude, latitude, name, city);
     }
+
+
 
 }

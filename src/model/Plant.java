@@ -28,4 +28,12 @@ public class Plant {
         mature = true;
     }
 
+    public Double getLong() {
+         return longitude;
+    }
+
+    public Double getLat() {
+         return latitude;
+    }
+
 }
