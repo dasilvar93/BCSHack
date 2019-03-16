@@ -11,5 +11,16 @@
     <orderEntry type="library" name="com.googlecode.sli4j:sli4j-slf4j-simple:2.0" level="project" />
     <orderEntry type="library" name="json" level="project" />
     <orderEntry type="library" name="org.junit.jupiter:junit-jupiter:5.4.0" level="project" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../java-json.jar/java-json.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$MODULE_DIR$/../java-json.jar/java-json.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
   </component>
 </module>
