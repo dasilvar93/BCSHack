@@ -2,6 +2,7 @@ package model;
 
 import model.Users.User;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -12,6 +13,8 @@ public class City {
     private HashMap<String, List<Plant>> plants;
     private List<User> users;
     private static final Double NEAR_THRESHOLD = 1000.00; //metres
+    private HashMap<LocalDate, Integer> rainfallRecord; //mm
+    private static final Integer RAINFALL_THRESHOLD = 5;
 
 
     public City(String name, Integer zone) {
@@ -19,6 +22,7 @@ public class City {
         this.zone = zone;
         plants = new HashMap<>();
         users = new ArrayList<>();
+        rainfallRecord = new HashMap<>();
     }
 
     public List<Plant> getPlants(Double maxLong, Double minLong, Double maxLat, Double minLat) {
@@ -31,6 +35,10 @@ public class City {
             }
         }
         return returnPlants;
+    }
+
+    public void addRainfall(LocalDate date, Integer amount) {
+        rainfallRecord.put(date, amount);
     }
 
     public void addUser(User user){
@@ -56,11 +64,9 @@ public class City {
         Double minLat = latitude - (NEAR_THRESHOLD/2);
 
         for (User u: users) {
-            if (u.getClass().getName().equals("Grower")){
                 if (withinThreshold(u, maxLong, minLong, maxLat, minLat)) {
                     returnUsers.add(u);
                 }
-            }
         }
 
         return returnUsers;
@@ -73,6 +79,16 @@ public class City {
 
     private Boolean withinThreshold(User u, Double maxLong, Double minLong, Double maxLat, Double minLat) {
         return (u.getLong() <= maxLong) && (u.getLong() >= minLong) && (u.getLat() <= maxLat) && (u.getLat() >= minLat);
+    }
+
+    public void waterFromRainfall() {
+        if (rainfallRecord.get(LocalDate.now()) >= RAINFALL_THRESHOLD) {
+            for (List<Plant> list: plants.values()){
+                for (Plant p: list){
+                    p.watered();
+                }
+            }
+        }
     }
 
 }

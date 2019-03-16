@@ -119,11 +119,16 @@ public class Plant {
              for (User u: city.usersNear(longitude, latitude)) {
                  u.notify(this, "water");
              }
-
          }
     }
 
-
+    public void readyToHarvest() {
+         if (harvestable) {
+             for (User u: city.usersNear(longitude, latitude)) {
+                 u.notify(this, "harvest");
+             }
+         }
+    }
 
 
 
