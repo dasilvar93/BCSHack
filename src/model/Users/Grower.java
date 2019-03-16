@@ -1,6 +1,7 @@
 package model.Users;
 
 import model.City;
+import model.Plant;
 
 public class Grower extends User {
 
@@ -14,6 +15,10 @@ public class Grower extends User {
         super(longitude, latitude, name, city);
     }
 
-
+    public void notify(Plant plant, String message) {
+        if (message.equalsIgnoreCase("water")) {
+            System.out.println(plant.getSpecies() + "needs to be watered!");
+        }
+    }
 
 }

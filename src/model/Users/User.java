@@ -37,4 +37,18 @@ public abstract class User {
     public List<Plant> plantTypeNear() {
         return null;
     }
+
+    public void changeCity(City city) {
+        this.city = city;
+    }
+
+    public Double getLong() {
+        return this.longitude;
+    }
+
+    public Double getLat() {
+        return this.latitude;
+    }
+
+    public abstract void notify(Plant plant, String message);
 }
