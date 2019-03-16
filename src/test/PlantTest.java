@@ -10,5 +10,6 @@ public class PlantTest {
     @Test
     public void testNotification() {
         plant.changeHarvestable();
+        plant.readyToHarvest();
     }
 }
