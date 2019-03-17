@@ -1,16 +1,21 @@
 package model.Ui.InputBars;
 
+import model.Plant;
+
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class InputPlantTypePanel extends JPanel implements ActionListener{
-    public static JTextField textField;
+    public static JTextField plantTextField;
+    public Plant newPlant;
+    private Double mockLat; // TODO MOCK - pass in with get lat from geolocation
+    private Double mockLon; // TODO MOCK - pass in with get from geolocation
 
     public InputPlantTypePanel(){
-        textField = new JTextField(20);
-        textField.addActionListener(this);
-        add(textField);
+        plantTextField = new JTextField(20);
+        plantTextField.addActionListener(this);
+        add(plantTextField);
         makeEnterButton();
     }
 
@@ -19,7 +24,12 @@ public class InputPlantTypePanel extends JPanel implements ActionListener{
         b.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                String text = plantTextField.getText();
+                plantTextField.selectAll();
+                System.out.print(text + " was entered in the Input Plant Bar " + "\n");
+                newPlant = new Plant(text, mockLon, mockLat);
 
+                plantTextField.setText("");
             }
         });
         add(b);
@@ -27,9 +37,9 @@ public class InputPlantTypePanel extends JPanel implements ActionListener{
 
     @Override
     public void actionPerformed(ActionEvent evt) {
-        String text = textField.getText();
-        textField.selectAll();
+        String text = plantTextField.getText();
+        plantTextField.selectAll();
 
-        textField.setText("");
+        plantTextField.setText("");
     }
 }

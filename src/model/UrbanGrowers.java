@@ -9,6 +9,7 @@ public class UrbanGrowers {
 
 
     public static void main(String[] args) throws IOException {
+        System.out.print("UrbanGrowers has started" + "\n");
         ui = new MainUi();
 
     }
