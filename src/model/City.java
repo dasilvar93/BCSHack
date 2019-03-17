@@ -10,7 +10,7 @@ import java.util.List;
 public class City {
     private String name;
     private Integer zone;
-    private List<Plant> plants;
+    public static List<Plant> plants;
     private List<User> users;
     private static final Double NEAR_THRESHOLD = 1000.00; //metres
     private HashMap<LocalDate, Integer> rainfallRecord; //mm

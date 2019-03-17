@@ -11,9 +11,7 @@ public class TestPlantData {
 
     @Test
     public void testPlantParsing() {
-        System.out.println("hi");
         List<Plant> trees = parseDefault();
-        System.out.println(trees.size());
         System.out.println(trees.get(0).getSpecies());
         System.out.println(trees.get(0).getLong());
         System.out.println(trees.get(0).getLat());
