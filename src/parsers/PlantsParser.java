@@ -25,8 +25,7 @@ public class PlantsParser {
         String plantDataPath = "./src/data/appletrees.json";
         try {
             String plantsJson = new String(Files.readAllBytes(Paths.get(plantDataPath)));
-            List<Plant> plants = jsonToPlants(plantsJson);
-            return plants;
+            return jsonToPlants(plantsJson);
         } catch (Exception e) {
             System.out.println("Default plant data parser failed.");
             return new ArrayList<>();

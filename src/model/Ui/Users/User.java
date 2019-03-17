@@ -4,6 +4,7 @@ import model.City;
 import model.Plant;
 
 import java.util.List;
+import java.util.Objects;
 
 public abstract class User {
 
@@ -23,7 +24,7 @@ public abstract class User {
         this.longitude = longitude;
         this.name = name;
         this.city = city;
-        city.addUser(this);
+        this.city.addUser(this);
     }
 
     public List<Plant> AllPlantsNear(){
@@ -52,4 +53,17 @@ public abstract class User {
     }
 
     public abstract void notify(Plant plant, String message);
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        User user = (User) o;
+        return Objects.equals(name, user.name);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name);
+    }
 }
