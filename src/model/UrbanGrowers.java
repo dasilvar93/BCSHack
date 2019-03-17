@@ -11,6 +11,7 @@ public class UrbanGrowers {
     public static City newCity;
     public static Boolean gottenPlantHarvestable;
     public static String gottenPlantSpecies;
+    public static String currentPlantName;
 
 
     public static void main(String[] args) throws IOException {

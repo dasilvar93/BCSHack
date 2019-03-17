@@ -1,6 +1,7 @@
 package model.Ui.InputBars;
 
 import model.Plant;
+import model.UrbanGrowers;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -40,6 +41,7 @@ public class InputPlantTypePanel extends JPanel implements ActionListener{
     private void makeAndAddPlantToCity(String plantType) {
         newPlant = new Plant(plantType, mockLon, mockLat);
         newCity.plants.add(newPlant);
+        UrbanGrowers.currentPlantName = plantType;
     }
 
     @Override
