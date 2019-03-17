@@ -18,7 +18,7 @@ public class Plant {
     private LocalDate datePlanted;
     private List<String> comments;
     private Status healthStatus;
-    private Boolean harvestable;
+    public Boolean harvestable;
     private Boolean mature;
     private Long daysToHarvest;
     private Long waterFrequency; //days
